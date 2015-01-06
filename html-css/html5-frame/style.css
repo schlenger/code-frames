@@ -1,0 +1,80 @@
+/* basic setup */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Abel';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+	margin-bottom: 15px;
+	line-height: 150%;
+}
+
+
+
+/* basic classes */
+.align-left {
+	float:left;
+	margin-right: 15px;
+}
+
+.align-right {
+	float:right;
+	margin-left: 15px;
+}
+
+/* basic structure */
+#wrapper {
+
+}
+
+header {
+
+}
+
+#logo {
+	
+}
+
+footer p {
+	font-size: 0.8em;
+}
+
+
+/* navigation */
+nav {
+	list-style-type: none;
+}
+
+nav li a,
+nav li a:link,
+nav li a:active {
+
+}
+
+nav li a:hover {
+
+}
+
+
+/* normal links */
+a,
+a:link,
+a:active {
+
+}
+
+a:hover {
+
+}
