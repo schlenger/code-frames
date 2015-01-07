@@ -21,6 +21,11 @@ ol {
 	line-height: 150%;
 }
 
+ol,
+ul {
+	margin-right: 15px;
+}
+
 
 
 /* basic classes */
@@ -36,7 +41,7 @@ ol {
 
 /* basic structure */
 #wrapper {
-
+	padding: 10px 20px;
 }
 
 header {
@@ -60,11 +65,12 @@ nav {
 nav li a,
 nav li a:link,
 nav li a:active {
-
+	text-decoration: none;
+	color:#aaa;
 }
 
 nav li a:hover {
-
+	color:#000;
 }
 
 
