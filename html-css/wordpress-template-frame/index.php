@@ -1,60 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Site Name <?php if(wp_title()) {echo " - "; wp_title();	} ?></title>
-		<meta charset="UTF-8">
-		
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		<!-- css -->
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+<?php get_header(); ?>
 
-		<!-- webfonts -->
-		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-		
-		<!-- js -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>
-
-		<!--[if IE]>
-	    <script>
-	    document.createElement("header");
-	    document.createElement("footer");
-	    document.createElement("nav");
-	    document.createElement("aside");
-	    </script>    
-	    <![endif]-->
-
-		<!-- mobile stuff -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0; user-scalable=no">
-
-		<?php wp_head(); ?>
-	</head>
-
-	<body>
-
-		<div id="wrapper">
-			<header>
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" id="logo">
-				<?php
-					$navi=array(
-						'depth'        => 1,
-						'title_li' => ''
-					);
-				?>
-				<nav>
-					<?php wp_list_pages($navi); ?>
-				</nav>
-			</header>
 			<section id="main">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; endif; ?>
 			</section>
 
-			<footer>
-				<p>&copy; Copyright 2014</p>
-			</footer>
-		</div>
-		<?php wp_footer(); ?>
-	</body>
-</html>
+<?php get_footer(); ?>
