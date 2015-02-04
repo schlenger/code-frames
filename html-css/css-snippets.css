@@ -42,3 +42,9 @@
 	-o-transition:opacity 200ms ease-out;
 	transition:opacity 200ms ease-out;
 }
+
+
+/* mobile fixes */
+@media (max-width: 1000px) {
+
+}
