@@ -22,7 +22,6 @@
 
 
 
-
 /* nav animations */
 .nav a:hover
 {
@@ -44,7 +43,61 @@
 }
 
 
+
+/* MEDIA QUERIES 
+ * more info: http://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+ */
+
+/* printing */
+@media print {
+
+}
+
 /* mobile fixes */
 @media (max-width: 1000px) {
+
+}
+
+
+/* DEVICES
+ * todo: check for changes, maybe: http://stephen.io/mediaqueries/
+ */
+
+/* ipad */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* iphone */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Detect via aspect ratio:
+ * http://stackoverflow.com/questions/12539697/iphone-5-css-media-query
+ */
+/* iPhone < 5: */
+@media screen and (device-aspect-ratio: 2/3) {}
+
+/* iPhone 5: */
+@media screen and (device-aspect-ratio: 40/71) {}
+
+/* iPhone 6: */
+@media screen and (device-aspect-ratio: 667/375) {}
+
+/* iPhone 6 Plus: */
+@media screen and (device-aspect-ratio: 16/9) {}
+
+/* iPad: */
+@media screen and (device-aspect-ratio: 3/4) {}
+
+
+
+/* ORIENTATION */
+@media screen and (orientation: portrait) {
+
+}
+
+@media screen and (orientation: landscape) {
 
 }
