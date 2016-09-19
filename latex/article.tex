@@ -1,0 +1,30 @@
+\documentclass{article}
+
+% Character encoding
+\usepackage[ansinew]{inputenc} % windows
+%\usepackage[latin1]{inputenc} % linux
+%\usepackage[applemac]{inputenc} % macOS
+\usepackage[T1]{fontenc}
+
+% Enable Colors and set ToDos with \todo{text}
+\usepackage{color}
+\newcommand{\todo}[1]{\textcolor{red}{ToDo: #1}}
+
+% Enable images
+\usepackage[pdftex]{graphicx}          
+\graphicspath{{./images/}} % base image path
+% base file extension for shorter \includegraphics
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg} 
+
+% Multi-line comments
+\newcommand{\comment}[1]{}
+
+% Title information
+\title{Sample Tex File}
+\author{Max Mustermann} 
+
+\begin{document}
+\maketitle
+This is a clean sample LaTeX file.
+
+\end{document}

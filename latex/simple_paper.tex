@@ -1,0 +1,62 @@
+\documentclass{article}
+
+% Character encoding
+\usepackage[ansinew]{inputenc} % windows
+%\usepackage[latin1]{inputenc} % linux
+%\usepackage[applemac]{inputenc} % macOS
+\usepackage[T1]{fontenc}
+
+% Enable Colors and set ToDos with \todo{text}
+\usepackage{color}
+\newcommand{\todo}[1]{\textcolor{red}{ToDo: #1}}
+
+% Enable images
+\usepackage[pdftex]{graphicx}          
+\graphicspath{{./images/}} % base image path
+% base file extension for shorter \includegraphics
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg} 
+
+% Multi-line comments
+\newcommand{\comment}[1]{}
+
+% Title information
+\title{Sample Tex File}
+\author{Max Mustermann} 
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\paragraph{Abstract.}
+This is some abstract text. It contains information about the paper and should be around 200–250 words.
+\newpage
+
+
+\section{Sample Section} % (fold)
+\label{sec:sample_section}
+
+A basic article.
+
+\subsection{Sample Subsection} % (fold)
+\label{sub:sample_subsection}
+With an Umläut \cite{sample}. And it is shown in figure \ref{sample_figure}, which is in subsection \ref{sub:sample_subsection}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{sample_image} 
+	\caption{A sample figure}
+	\label{sample_figure}
+\end{figure}
+% subsection sample_subsection (end)
+
+% section sample_section (end)
+
+
+% Bibliography
+\begin{thebibliography}{widestlabel}
+      \bibitem{sample} An author. "A Book." A conference, 2016. Some publishing information.
+\end{thebibliography}
+
+
+\end{document}
