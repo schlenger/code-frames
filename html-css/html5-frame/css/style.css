@@ -9,6 +9,7 @@
 
 body {
 	font-family: 'Abel';
+	color:#333;
 }
 
 h1,
@@ -22,11 +23,27 @@ ul,
 ol {
 	margin-bottom: 15px;
 	line-height: 150%;
+	font-weight: normal;
 }
 
 ol,
 ul {
 	margin-right: 15px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+
+/* hightlighted text: 
+	- Safari >=1.1, Opera >=9.5, IE9
+	- Firefox >=1 */
+::selection {
+    background: #aaa;
+}
+::-moz-selection {
+    background: #aaa;
 }
 
 
@@ -42,21 +59,42 @@ ul {
 	margin-left: 15px;
 }
 
+.clearer {
+	clear: both;
+}
+
 /* basic structure */
 #wrapper {
 	padding: 10px 20px;
+	width: 960px;
+	margin: 0 auto;
 }
 
 header {
-
+	margin-top: 50px;
+	margin-bottom: 80px;
+	clear:both;
 }
 
 #logo {
-	
+	float:right;
+}
+
+footer {
+	border-top: 1px solid #ddd;
+	font-size: 0.8em;
+	color:#999;
+	text-align: right;
 }
 
 footer p {
-	font-size: 0.8em;
+	
+}
+
+footer p a,
+footer p a:link,
+footer p a:active {
+	text-decoration: none;
 }
 
 
@@ -81,9 +119,47 @@ nav li a:hover {
 a,
 a:link,
 a:active {
-
+	color:#999;
+	text-decoration: underline;
 }
 
 a:hover {
+	color:#333;
+}
 
+/* 1000px: smaller screen */
+@media (max-width: 1000px) {
+	#wrapper {
+		width: auto;
+		padding: 0;
+		margin: 0px 20px;
+	}
+}
+
+/* 720px: nav collapse */
+@media (max-width: 720px) {
+	#logo {
+		margin:0 auto;
+		float: none;
+	}
+
+	header {
+		text-align: center;
+	}
+
+	nav li a {
+		font-size: 1.5em;
+	}
+
+	.align-left {
+		float:none;
+	}
+
+	.align-right {
+		float:none;
+	}
+
+	#main img {
+		width: 100%;
+	}
 }
