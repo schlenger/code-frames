@@ -1,3 +1,12 @@
+/*
+Theme Name: zumSchlenker - A Wordpress Sample Theme
+Theme URI:http://www.zumschlenker.de
+Description: A sample Wordpress Theme
+Author: Mathias Schlenker
+Author URI: http://www.zumschlenker.de
+Version: 0.9
+*/
+
 /* basic setup */
 * {
 	margin: 0;
@@ -215,4 +224,23 @@ a:hover {
 	#main img {
 		width: 100%;
 	}
+}
+
+/* Wordpress stuff */
+.post-listing-title span {
+	color:#aaa;
+	font-size: 0.6em;
+}
+
+/* modify each blog, post or page */
+.blog {
+
+}
+
+.post {
+
+}
+
+.page {
+
 }

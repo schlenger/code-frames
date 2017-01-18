@@ -34,6 +34,6 @@
 
 	<div id="wrapper">
 		<header>
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" id="logo">
+			<a href="<?php get_home_url(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" id="logo"></a>
 			<?php get_sidebar(); ?>
 		</header>

@@ -1,6 +1,6 @@
 <?php
 	$navi=array(
-		'depth'        => 1,
+		'depth'	=> 2,
 		'title_li' => ''
 	);
 ?>
