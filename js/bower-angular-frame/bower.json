@@ -1,0 +1,23 @@
+{
+  "name": "bower-angular-frame",
+  "homepage": "https://github.com/schlenger/code-frames",
+  "authors": [
+    "Mat Schlenker <mat.schlenker@gmail.com>"
+  ],
+  "description": "An example of bower and angular.js",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-messages": "^1.6.2",
+    "angular-route": "^1.6.2"
+  }
+}

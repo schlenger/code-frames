@@ -16,7 +16,7 @@
  ?>
 
 
- <?php 
+<?php 
 	/* Show information of Post revisions*/ 
 
 		// within the_loop
@@ -28,3 +28,16 @@
 			}
 		}
  ?>
+
+ <?php 
+	/* Request a template variable, e.g. as an image*/ 
+
+	if(get_post_custom_values("footer-img")) { ?>
+    <div class="footer-img">
+    	<!-- only get the first definition of that value -->
+      <img src="<?php print(get_post_custom_values('footer-img')[0]); ?>">
+    </div>
+  <?php } else { ?>
+    <!-- do nothing here, maybe a default picture -->
+  <?php } 
+?>

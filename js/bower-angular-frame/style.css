@@ -1,0 +1,25 @@
+*:not(span) {
+  margin: 5px;
+  padding: 5px;
+}
+
+header {
+  border-bottom: 2px solid #aaa;
+  text-align: center;
+}
+
+a,
+a:visited {
+  color:steelblue;
+}
+
+a:hover {
+  color:#333;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+}

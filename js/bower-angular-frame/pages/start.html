@@ -1,0 +1,34 @@
+<h2>Hey,</h2>
+<p>
+  <!-- inline scope vars -->
+  It's {{ name }} from {{ source }}! <button ng-click="log()">LOG!</button>
+</p>
+
+<p ng-show="field === 'Matilda'">Hey Matilda!</p>
+<p ng-hide="field === 'Matilda'">
+  Hey There,<br>
+  <!-- inline if conditions -->
+  You've typed {{ field === undefined?"nothing valid!":field+'!' }}
+</p>
+
+<form name="sampleForm">
+  <!-- ng-model="x" binds an input to basically $scope.x -->
+  <input type="text" name="sampleInput" ng-model="field" required minlength="5">
+  <!-- validation and output -->
+  <p ng-messages="sampleForm.sampleInput.$error">
+    <span ng-message="required">Input is empty.</span>
+    <span ng-message="minlength">Too short (at least 5 chars)</span>
+  </p>
+</form>
+
+<h3>Some Websites</h3>
+<!-- using ng-repeat to iterate through arrays -->
+<ul>
+  <li ng-repeat="website in websites">
+    <a href="{{ website.url }}" target="_blank">{{ website.name }}</a>
+  </li>
+  <li><a ng-click="addOne()" style="cursor: pointer;">Add One</a></li>
+</ul>
+
+<h3>Useful information</h3>
+<input type="" name="" ng-model="information">

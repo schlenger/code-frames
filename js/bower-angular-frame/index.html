@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="frameApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>angular Frame</title>
+
+  <!-- angular -->
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+
+  <!-- angular modules -->
+  <script type="text/javascript" src="bower_components/angular-messages/angular-messages.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+
+  <!-- the main app -->  
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="routes.js"></script>
+  <script type="text/javascript" src="controllers.js"></script>
+  <script type="text/javascript" src="services.js"></script>
+  <script type="text/javascript" src="directives.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      Navigation:
+      <a href="#!/">Start</a> | <a href="#!/list/3">List</a>  
+    </nav>
+  </header>
+  <div ng-view></div>
+</body>
+</html>

@@ -12,6 +12,12 @@ All files can be found in the subfolder `html-css/`:
 - A HTML5 frame with all important basic file links like CSS and JS files and a basic responsive functionality.
 - Some useful CSS code snippets are collected in the file `css-snippets.css`.
 
+### JS
+All files can be found in the subfolder `js/`:
+
+- A bower and angularjs (v1) demo could be found in `bower-angular-frame`. The Readme file provides a short guide. 
+- `snippets.js` contains maybe useful small snippets
+
 ### LaTeX
 All files can be found in the subfolder `latex/`:
 

@@ -1,0 +1,17 @@
+<h3>A list:</h3>
+<p>
+  You've requested 
+  <!-- the | indicates a filter function, look in frameApp.js for a reference -->
+  <span ng-repeat="i in num | range">I</span>
+  items! We only have those:
+</p>
+
+<div class="customList">
+  <custom-list-item group="{{group}}" name="Peter">
+      test
+  </custom-list-item>
+  <custom-list-item group="{{group}}" name="Max"></custom-list-item>
+</div>
+
+<h3>Useful information</h3>
+<input type="" name="" ng-model="information">
