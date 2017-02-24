@@ -1,7 +1,19 @@
-﻿<!DOCTYPE HTML>
-<html>
+<?php
+/**
+ * The header for our theme
+ *
+ * @link http://zumschlenker.de
+ *
+ * @package zumSchlenker
+ * @subpackage Demo Page
+ * @since 1.0
+ * @version 1.0
+ */
+
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js no-svg">
 	<head>
-		<title>Site Name <?php if(wp_title()) {echo " - "; wp_title();	} ?></title>
+		<title><?php if(wp_title()) { wp_title(); echo " - ";	} ?> Site Name</title>
 		<meta charset="UTF-8">
 		
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -30,7 +42,7 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body>
+	<body <?php body_class(); ?>>
 
 	<div id="wrapper">
 		<header>
