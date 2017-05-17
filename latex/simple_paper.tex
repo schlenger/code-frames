@@ -5,6 +5,7 @@
 %\usepackage[latin1]{inputenc} % linux
 %\usepackage[applemac]{inputenc} % macOS
 \usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref} % enable links, but down mark them in an ugly manner
 
 % Enable Colors and set ToDos with \todo{text}
 \usepackage{color}
@@ -50,10 +51,10 @@ A basic article.
 With an Umläut \cite{sample}. And it is shown in figure \ref{sample_figure}, which is in subsection \ref{sub:sample_subsection}.
 
 \begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth]{sample_image} 
-	\caption{A sample figure}
-	\label{sample_figure}
+  \centering
+  \includegraphics[width=\textwidth]{sample_image} 
+  \caption{A sample figure}
+  \label{sample_figure}
 \end{figure}
 % subsection sample_subsection (end)
 
@@ -62,8 +63,7 @@ With an Umläut \cite{sample}. And it is shown in figure \ref{sample_figure}, whi
 
 % Bibliography
 \begin{thebibliography}{widestlabel}
-      \bibitem{sample} An author. "A Book." A conference, 2016. Some publishing information.
+  \bibitem{sample} An author. "A Book." A conference, 2016. Some publishing information.
 \end{thebibliography}
-
 
 \end{document}
